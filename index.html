@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>airbnb_clone coding</title>
+  <style>
+    ul{
+      list-style-type: none;
+      display: inline-block;
+    }
+    body{
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+    }
+    .price{
+      color: black;
+      font-weight: bold;
+    }
+    .circle{
+      border-radius: 20px;
+    }
+    .a{
+      position: relative;
+    }
+    .b{
+      padding-left: 153px;
+    }
+    .c{
+      padding-left: 130px;
+    }
+    .d{
+      padding-left: 167px;
+    }
+    .e{
+      padding-left: 137px;
+    }
+    .title{
+      padding-left: 48px;
+    }
+    .guest{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: white;
+      color: black;
+      font-size: 12px;
+      padding: 5px 10px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .box{
+      width: 115px;
+      height: 45px;
+      border-radius: 10px;
+      background-color: white;
+      color: black;
+    }
+    .box1{
+      padding-left: 39px;
+      padding-top: 25px;
+    }
+    .price_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+  <h1 class="title">서울의 인기 급상승 숙소</h1>
+  <h3 class="title">에어비앤비에서 많은 관심을 받고 있으며 평점이 높은 숙소입니다.</h3>
+  </header>
+  <section>
+    <ul>
+      <li>
+          <img src="image.png" width="285" height="255" class="circle">
+      </li>
+      <li>
+        광진구의 집 <span class="e">&#9733;<span class="f1">4.87(336)</span></span>
+      </li>
+      <li>
+      유목 나무처럼 쉬고 싶다
+      </li>
+      <li>지난주 463회 조회됨</li>
+      <li>4월 13일-18일</li>
+      <li><span class="f1">&#8361;71,438</span>/박 &#183; 총액 &#8361;357,188</li>
+    </ul>
+  </div>
+    <ul>
+      <li>
+      <div class="a">
+        <div class="guest">게스트 선호</div>
+        <img src="image (1).png" width="285" height="255" class="circle">
+      </div>
+      </li>
+      <li>
+        서울의 집 <span class="d">&#9733;<span class="f1">5.0(44)</span></span>
+      </li>
+      <li>Stay Cocooner / 서촌</li>
+      <li>지난주 337회 조회됨</li>
+      <li>5월 6일~11일</li>
+      <li><span class="f1">&#8361;147,668</span>/박  &#183; 총액 &#8361;738,342</li>
+    </ul>
+    <ul>
+      <li>
+      <div class="a">
+      <div class="guest">게스트 선호</div> 
+        <img src="image (2).png" width="285" height="255" class="circle">
+      </div>
+      </li>
+      <li>
+        서울의 집 <span class="b">&#9733;<span class="f1">4.87(336)</span></span>
+      </li>
+      <li>종로독채한옥 '스테이희화'Premium Hanok..</li>
+      <li>지난주 666회 조회됨</li>
+      <li>6월 15일-20일</li>
+      <li><span class="f1">&#8361;353537</span>/박 &#183; 총액 &#8361;1,767,683</li>
+    </ul>
+    <ul>
+      <li>
+      <div class="a">
+      <div class="guest">게스트 선호</div>  
+      <img src="image (3).png" width="285" height="255" class="circle">
+      </div>
+      </li>
+      <li>
+        <div>
+        서울의 아파트 <span class="c">&#9733;<span class="f1">4.96(92)</span></span>
+        </div>
+      </li>
+      <li>#2[장박환영]청소비x석촌호수 뷰 감성+따뜻하고..</li>
+      <li>지난주 299회 조회됨</li>
+      <li>4월 20일-25일</li>
+      <li><span class="price">&#8361;<span class="cost">138,082</span></span>/박 &#183; 총액 &#8361;690,412</li>
+    </ul>
+  </section>
+  <div class="box1">
+  <button class="box">더 찾아보기</button>
+  <button id="plus" class="price_button">+</button>
+  <button id="minus" class="price_button">-</button>
+
+  </div>
+      <script>
+        document.getElementById("plus").addEventListener("click", () => {
+            document.querySelectorAll(".cost").forEach((cost) => {
+                let current = parseInt(cost.innerHTML.replace(/,/g, ''));
+                cost.innerHTML = (current+10000).toLocaleString();
+            });
+        });
+   
+
+        document.getElementById("minus").addEventListener("click", () => {
+            document.querySelectorAll(".cost").forEach((cost) => {
+                let current = parseInt(cost.innerHTML.replace(/,/g, ''));
+                cost.innerHTML = (current - 10000).toLocaleString();
+            });
+        });
+    </script>
+</body>
+</html>
