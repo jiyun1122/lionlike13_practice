@@ -1,0 +1,36 @@
+{
+  "songs" : [
+    {
+      "albumImage": "/src/assets/rebel-heart.jpeg",
+      "releaseDate": "2025-01-13",
+      "artist": "IVE",
+      "title": "REBEL HEART",
+      "lyricist": "Nietzsche",
+      "composer": "Emily Harbakk"
+    },
+    {
+      "albumImage": "/src/assets/goslow.jpg",
+      "releaseDate": "2024-05-24",
+      "artist": "양홍원",
+      "title": "SLOWMO",
+      "lyricist": "양홍원",
+      "composer": "양홍원"
+    },
+    {
+      "albumImage": "/src/assets/honestly.jpg",
+      "releaseDate": "2024-04-28",
+      "artist": "RIIZE",
+      "title": "Honestly",
+      "lyricist": "박지현",
+      "composer": "Celine"
+    },
+    {
+      "albumImage": "/src/assets/wlr.jpg",
+      "releaseDate": "2020-12-25",
+      "artist": "playboi carti",
+      "title": "Whole lotta red",
+      "lyricist": "playboi carti",
+      "composer": "Art Dealer"
+    }
+  ]
+}
