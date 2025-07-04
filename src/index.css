@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-ph: 360px;
+  --breakpoint-dt: 1220px;
+}
+/* 반응형 웹디자인 기본 설정 5주차 과제 clone coding*/
