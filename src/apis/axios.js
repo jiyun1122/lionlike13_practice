@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useAuthStore } from '../stores/useAuthStore';
 
-const axiosInstance = axios.create({
+export const axiosInstance = axios.create({
   baseURL: 'https://api.example.com', // 백엔드 URL .env로
   headers: {
     'Content-Type': 'application/json',
