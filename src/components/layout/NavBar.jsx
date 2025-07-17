@@ -5,12 +5,17 @@ import { useAuthStore } from '../../stores/useAuthStore';
 import { LoginModal } from '../modal/LoginModal';
 
 export const NavBar = () => {
+  const {isLoggedIn} = useAuthStore();
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleMyPageClick = () => {
     // TODO: 로그인 여부 가져오기
-    navigate('/mypage');
+    if (isLoggedIn) {
+      navigate('/mypage');
+    } else {
+      setIsModalOpen(true);
+    }
   };
 
   return (
@@ -39,6 +44,7 @@ export const NavBar = () => {
         </div>
       </nav>
       {/* 로그인 모달 띄우기 */}
+      {isModalOpen && <LoginModal onClose={() => setIsModalOpen(false)} />}
     </>
   );
 };

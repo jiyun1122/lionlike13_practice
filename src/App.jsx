@@ -6,6 +6,7 @@ import { MyPage } from './pages/MyPage';
 import { NotFound } from './pages/NotFound';
 
 import { Layout } from './components/layout/Layout';
+import KakaoRedirect from './pages/KakaoRedirect';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/mypage" element={<MyPage />} />
+          <Route path='/auth/callback' element={<KakaoRedirect />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
