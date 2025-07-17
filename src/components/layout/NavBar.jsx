@@ -8,7 +8,7 @@ export const NavBar = () => {
   const {isLoggedIn} = useAuthStore();
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+ 
   const handleMyPageClick = () => {
     // TODO: 로그인 여부 가져오기
     if (isLoggedIn) {
