@@ -16,7 +16,7 @@ export const Login = () => {
       <h1 className="text-[#191919] text-2xl font-semibold text-center mb-8">
         카카오톡으로 간편하게 로그인하고 <br />
         서비스를 이용해보세요!
-      </h1>
+      </h1> 
 
       <button 
         onClick={handleLogin} 

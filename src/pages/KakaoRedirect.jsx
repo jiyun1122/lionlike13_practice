@@ -17,7 +17,7 @@ const KakaoRedirect = () => {
         if (!code) {
             alert("인가 코드 없음");
             nav("/login");
-            return;
+            return; 
         }
 
         const kakaoLogin = async() => {

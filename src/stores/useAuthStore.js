@@ -8,11 +8,11 @@ export const useAuthStore = create((set) => ({
 
   setTokens: (accessToken, refreshToken) => {
     set({
-      isLoggedIn: true,
+      isLoggedIn: true, 
       accessToken,
       refreshToken,
     });
-  },
+  }, 
 
   clearAuth: () => {
     set({

@@ -8,7 +8,7 @@ import { NotFound } from './pages/NotFound';
 import { Layout } from './components/layout/Layout';
 import KakaoRedirect from './pages/KakaoRedirect';
 
-const App = () => {
+const App = () => { 
   return (
     <BrowserRouter>
       <Routes>

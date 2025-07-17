@@ -5,5 +5,5 @@ export const login = async (code) => {
         code,
 });
 
-    return res.data;
+    return res.data; 
 }
